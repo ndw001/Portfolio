@@ -5,11 +5,7 @@
   padding: 10px;
 }
 
-/* .tab {
-  flex: 1;
-  padding: 15px;
-  text-align: center;
+.tab:hover {
+  background-color: lightcoral;
   cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s;
-} */
+}
