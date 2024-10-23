@@ -1,12 +1,5 @@
-.introText {
-  font-family: "Courier New";
-  font-size: 4vw;
-  font-weight: 600;
-  padding: 20px;
-}
-
 .header {
-  background-color: lightblue;
+  background-color: red;
   height: 100%;
 }
 
