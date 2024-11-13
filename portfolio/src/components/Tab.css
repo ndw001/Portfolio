@@ -3,6 +3,8 @@
   color: black;
   text-align: center;
   padding: 10px;
+  margin-right: 20px;
+  flex-grow: 1;
 }
 
 .tab:hover {

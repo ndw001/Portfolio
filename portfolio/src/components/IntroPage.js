@@ -6,7 +6,7 @@ function IntroPage() {
   return (
     <div className="introPage">
       <div className="introText">
-        Hi, I'm Nathan Wong, a full stack developer. Welcome to my page
+        Hi, I'm Nathan Wong, a full stack developer. Welcome to my page!
       </div>
     </div>
   );

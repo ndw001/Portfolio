@@ -3,7 +3,7 @@ import Tab from "./Tab";
 
 function Header() {
   // Headers: Top, About Me, Projects, Contact Me
-  const testTabs = ["Home", "Projects"];
+  const testTabs = ["Home", "Projects", "Contact Me"];
 
   return (
     <div className="header">
