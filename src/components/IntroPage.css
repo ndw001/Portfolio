@@ -1,0 +1,19 @@
+.introText {
+  font-family: "Arial";
+  font-size: 4vw;
+  font-weight: 600;
+  padding: 20px;
+}
+
+.introPage {
+  background-color: lightblue;
+  height: 100vw;
+  width: 100vw;
+}
+
+.tabBar {
+  background-color: gray;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}

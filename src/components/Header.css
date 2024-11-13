@@ -1,0 +1,14 @@
+.header {
+  background-color: red;
+  height: 100%;
+}
+
+.tabBar {
+  background-color: gray;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
