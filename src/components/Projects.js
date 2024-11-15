@@ -9,15 +9,17 @@ function Projects() {
   // Text box is CLAIM: Caption
 
   return (
-    <div className="projects">
-      {testProjects.map((tab, index) => (
-        <div className="projectContainer" key={index}>
-          <div className="title"> {tab} </div>
-          <div className="textBox"> Text Box </div>
-          <div className="photo"> Photo </div>
-        </div>
-      ))}
-    </div>
+    <section id="projects">
+      <div className="projects">
+        {testProjects.map((tab, index) => (
+          <div className="projectContainer" key={index}>
+            <div className="title"> {tab} </div>
+            <div className="textBox"> Text Box </div>
+            <div className="photo"> Photo </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 

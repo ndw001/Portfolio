@@ -3,15 +3,13 @@ import Tab from "./Tab";
 
 function Header() {
   // Headers: Top, About Me, Projects, Contact Me
-  const testTabs = ["Home", "Projects", "Contact Me"];
+  const testTabs = ["home", "projects", "contact"];
 
   return (
-    <div className="header">
-      <div className="tabBar">
-        {testTabs.map((tab, index) => (
-          <Tab tabName={tab} />
-        ))}
-      </div>
+    <div className="tabBar">
+      {testTabs.map((tabName, index) => (
+        <Tab index={index} tabName={tabName} />
+      ))}
     </div>
   );
 }

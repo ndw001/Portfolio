@@ -1,5 +1,4 @@
 import "./IntroPage.css";
-import Tab from "./Tab";
 
 function IntroPage() {
   // Headers: Top, About Me, Projects, Contact Me
