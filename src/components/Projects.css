@@ -3,3 +3,15 @@
   height: 100vw;
   width: 100vw;
 }
+
+.projectContainer {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+}
