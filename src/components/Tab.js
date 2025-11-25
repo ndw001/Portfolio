@@ -1,17 +1,21 @@
 import "./Tab.css";
-import { Link } from "react-scroll";
+import { scroller } from "react-scroll";
 
 function Tab(props) {
+  const handleClick = () => {
+    console.log("Scrolling to:", props.tabName);
+    scroller.scrollTo(props.tabName, {
+      duration: 500,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+      offset: -80
+    });
+  };
+
   return (
-    <Link
-      to={props.tabName}
-      smooth={true}
-      duration={500}
-      onClick={() => console.log("Click Me Link")}
-      className="tab"
-    >
-      <nav>{props.tabName}</nav>
-    </Link>
+    <div className="tab" onClick={handleClick}>
+      {props.tabName}
+    </div>
   );
 }
 

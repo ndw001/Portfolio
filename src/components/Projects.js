@@ -1,35 +1,55 @@
 import "./Projects.css";
+import { Element } from "react-scroll";
 
 function Projects() {
-  // Each Section is a different Project
-
-  // const testProjects = ["Set"];
-
   const testProjects = [
     {
-      name: "Set",
-      descTitle: "Card game",
-      desc: "This is a game",
+      name: "Set Card Game",
+      descTitle: "Interactive Card Game",
+      desc: "A fully interactive implementation of the classic Set card game built with React. Features real-time game logic, pattern matching algorithms, and a responsive UI for an engaging gaming experience.",
+      tags: ["React", "JavaScript", "Game Logic"],
+      photo: "",
+    },
+    {
+      name: "Portfolio Website",
+      descTitle: "Personal Portfolio",
+      desc: "A modern, responsive portfolio website showcasing my projects and skills. Built with React and featuring smooth animations, scroll effects, and a clean, professional design.",
+      tags: ["React", "CSS3", "Responsive Design"],
       photo: "",
     },
   ];
 
-  // alternating Left and Right Text and Picture
-  // Text box is CLAIM: Caption
-
   return (
-    <section id="projects">
-      <header className="projectsHeader">Projects</header>
-      <div className="projects">
-        {testProjects.map((tab, index) => (
-          <div className="projectContainer" key={index}>
-            <div className="title"> {tab.name} </div>
-            <div className="textBox"> Text Box </div>
-            <div className="photo"> Photo </div>
-          </div>
-        ))}
+    <Element name="projects" className="projects-section">
+      <div className="projects-content">
+        <header className="projectsHeader">Featured Projects</header>
+        <div className="projects-grid">
+          {testProjects.map((project, index) => (
+            <div className="projectCard" key={index}>
+              <div className="projectImage">
+                <div className="placeholder-image">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <rect x="3" y="3" width="18" height="18" rx="2" strokeWidth="2"/>
+                    <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/>
+                    <polyline points="21 15 16 10 5 21" strokeWidth="2"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="projectContent">
+                <h3 className="projectTitle">{project.name}</h3>
+                <p className="projectSubtitle">{project.descTitle}</p>
+                <p className="projectDesc">{project.desc}</p>
+                <div className="projectTags">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="tag">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </section>
+    </Element>
   );
 }
 

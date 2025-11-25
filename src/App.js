@@ -2,15 +2,16 @@ import "./App.css";
 import IntroPage from "./components/IntroPage";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import { Link } from "react-scroll";
 
 function App() {
   return (
     <div className="App">
-      <IntroPage />
       <Header />
+      <IntroPage />
       <Projects />
+      <Skills />
       <Contact />
     </div>
   );
