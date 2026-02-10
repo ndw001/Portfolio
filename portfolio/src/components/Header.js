@@ -2,16 +2,13 @@ import "./Header.css";
 import Tab from "./Tab";
 
 function Header() {
-  // Headers: Top, About Me, Projects, Contact Me
-  const testTabs = ["Home", "Projects", "Contact Me"];
+  const testTabs = ["home", "projects", "skills", "contact"];
 
   return (
-    <div className="header">
-      <div className="tabBar">
-        {testTabs.map((tab, index) => (
-          <Tab tabName={tab} />
-        ))}
-      </div>
+    <div className="tabBar">
+      {testTabs.map((tabName, index) => (
+        <Tab key={index} index={index} tabName={tabName} />
+      ))}
     </div>
   );
 }
